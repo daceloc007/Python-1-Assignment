@@ -1,22 +1,21 @@
 
 :Authors: Galvanize
-:Web site: https://github.com/GalvanizeDataScience/python-essentials-2
+:Web site: https://github.com/GalvanizeDataScience/python-essentials-1
 :Copyright: Galvanize Inc.
 
-Python Essentials II
+Python Essentials I
 ==============================
 
-When compared to other `scripting languages <https://en.wikipedia.org/wiki/Scripting_language>`_ Python code is often
-noted for it's high level of readability. This is in part due to enforced spacing that is built into the code itself.
-It goes far beyond spacing and further details can be found in the
-`PEP 8 -- Style Guide <https://www.python.org/dev/peps/pep-0008/>`_.  In this lesson you will learn more about what
-it means to write *pythonic code*.
+For some of you this is your first programming language and for others this will be an additional language that you add
+to your toolbox.  Python has become the most popular language used by data professionals in industry today.  Python
+can be used for full-stack development, high-performance computing, backend development, data science and so much more.
+In this lesson we will work though introducing the language to you.
 
-You will continue to learn how to `control the flow <https://en.wikipedia.org/wiki/Control_flow>`_ of you Python code,
-ultimately gaining more granularity in how you can accomplish tasks with code.  An important part of being able to
-write code that specifically performs what you intend is to ensure that you are familiar with the logical operators.
-Finally, there will be an introduction to debugging in Python, which is a element of all programming languages that is
-needed to produce code in a timely manner.
+All programming languages use code to accomplish a specific task.  We will first ensure that you can *execute* code and
+there are a number of way to do this with Python ranging from executing code that is saved in a file to executing code
+in an environment that is interactive like the experience you have with a calculator.  Once your are comfortable
+executing code we will introduce the data types and data containers (also known as data structures) that are the
+fundamental units of Python code.
 
 
 Learning Objectives
@@ -25,13 +24,11 @@ Learning Objectives
 +--------------------------------+----------------------------------------------------------------------------------+
 | Topic                          | Learning Objectives                                                              |
 +================================+==================================================================================+
-| Pythonic Code                  | Describe the basics of Pythonic code                                             |
+| Code Execution                 | Run Python code from the prompt, from a script, using CLI, and from Jupyter      |
 +--------------------------------+----------------------------------------------------------------------------------+
-| Control Flow                   | Effectively use 'for' loops, 'while' loops, and comprehensions                   |
+| Data Types                     | Discuss and work with all major data types                                       |
 +--------------------------------+----------------------------------------------------------------------------------+
-| Logical Operators              | Effectively carry out logical operations                                         |
-+--------------------------------+----------------------------------------------------------------------------------+
-| Debugging                      | Perform basic debugging operations                                               |
+| Containers                     | Discuss and work with all major data structures                                  |
 +--------------------------------+----------------------------------------------------------------------------------+
 
 
