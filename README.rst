@@ -1,6 +1,6 @@
 
 :Authors: Galvanize
-:Web site: https://github.com/GalvanizeDataScience/python-essentials-1
+:Web site: https://github.com/GalvanizeDataScience/python-1
 :Copyright: Galvanize Inc.
 
 Python Essentials I
