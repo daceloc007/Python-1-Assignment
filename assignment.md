@@ -4,15 +4,19 @@ The Python I assignment has three components
 
 - Practice code execution
 - Practice with data types
-- Practice with lists
+- Practice with strings and lists
 
 > Note that this assignment assumes you have a working installation of Python and that you have access to a Terminal.
 
 ## Instructions
 
-We'll be working through problems designed to get your hands on everything you learned - strings and lists 
-(and their methods), along with iteration using for loops. The goal of is to begin to get comfortable writing very 
-basic Python and executing the code in a variety of ways. 
+We'll be working through problems designed to provide both practice and additional context with the things your have 
+learned.  The goal of is to begin to get comfortable writing very basic Python and executing the code in a variety of 
+ways.  To answer these questions you will have to create Python scripts that you execute.  `print` statements are 
+useful for iterating on and debugging code. Although, 
+[print formatting](https://docs.python.org/3/tutorial/inputoutput.html) is not addressed directly in the following 
+questions you should do your best to ensure print statements produce thoughtful outputs.
+ 
 
 We will learn later on that all the data types in Python are 
 [Python classes](https://docs.python.org/3/tutorial/classes.html) or objects.  Objects can have data attached to them 
@@ -65,10 +69,10 @@ cogs_percentage = 0.59
 
 Let's assume these numbers represent a full year of sales.  Calculate the following terms: `annual_gross_revenue`,
 `monthly_gross_revenue`, and `quarterly_gross_revenue`.  After you have declared these variables use `print` statements 
-to ensure that the values are shown in the terminal when you execute the script. If are a more advanced student and you need more 
-of a challenge for this exercise that the print statements use the string 
-[format()](https://docs.python.org/3/library/stdtypes.html#str.format) method and that the values are rounded and 
-presented with only two significant digits. 
+to ensure that the values are shown in the terminal when you execute the script. You should be using the string 
+[format()](https://docs.python.org/3/library/stdtypes.html#str.format) method to ensure decent looking output.  In this 
+case that means that the values are [rounded](https://docs.python.org/3/library/functions.html#round) and presented with 
+only two significant digits. 
 
 Be sure that you can:
 
@@ -95,7 +99,7 @@ One such function [input()](https://docs.python.org/3/library/functions.html#inp
 during code execution.  
 
 In your Python script replace the hard-coded variable for `sales` in your script with `sales = input("Enter total sales:")` 
-and then execute the code again.  To ensure you script runs without errors you will also need to cast the value in sales 
+and then execute the code again.  To ensure your script runs without errors you will also need to cast the value in sales 
 from a string into a a float.  Experiment with reasonable and unreasonable inputs to get a sense for what kind of error 
 messages are produced.  Use print statements along with the built-in function 
 [isinstance()](https://docs.python.org/3/library/functions.html#isinstance) to keep track of what happens with 
@@ -105,10 +109,12 @@ different types of inputs (int, float, str, boolean).
 
 If you are a more advanced student you should try to include some input validation in your script and provide the user 
 with meaningful error messages.  The input coming from the command line in this case will always default to a string, 
-but you will one day write functions that take input from other sources and you will likely need to handle different 
-data types.  Think about dates for example.  To better equip yourself for handling different situations you should be 
-using Python's interactive environments like a sandbox.  If you are unsure how something might behave you should try it.
-For example, in an interactive Python environment try casting a Boolean into a float.
+but you will one day write functions that take input from other sources and so you will need to get accustomed to 
+working with and casting between different data types.  Think about dates for example.  
+
+To better equip yourself for handling different situations you should be using Python's interactive environments like 
+a sandbox.  If you are unsure how something might behave you should try it. For example, in an interactive Python 
+environment try casting a Boolean into a float.
 
 
 ### QUESTION 4 
@@ -145,10 +151,11 @@ Pandas, which is how you would handle data like these in practice.
 
 We have already been introduced to many of the 
 [built-in functions](https://docs.python.org/3/library/functions.html#len) in Python.  In this exercise we will be 
-getting some practice with lists and strings.  There are many ways to manipulate strings.  We are going to use the 
-[string module](https://docs.python.org/3/library/string.html) to showcase some of Python's additional functionality for
-working with strings.  We will cover modules in another lesson, but at a high level we are exposing access to additional
-Python tools.  We will also leverage the [random module](https://docs.python.org/3/library/random.html).
+getting some practice with lists and strings.  There are several ways to manipulate these types of iterables.  We are 
+going to use the [string module](https://docs.python.org/3/library/string.html) to showcase some of Python's 
+additional functionality for working with strings.  We will cover modules in another lesson, but at a high level we 
+are exposing access to additional Python tools.  We will also leverage the 
+[random module](https://docs.python.org/3/library/random.html) to answer this question.
 
 We are going to build a password generator.  Let's make the assumption that every password you generate needs to 
 contain at least one symbol, one uppercase letter and one lowercase letter.
@@ -176,6 +183,7 @@ randomize the numbers
     - a symbol
     - the correct length
 
-There are many ways to accomplish this. It is okay if you solution does not produce a valid password each time it is run, 
+There are many ways to accomplish this. It is okay if your solution does not produce a valid password each time it is run, 
 but your print statements should indicate why the password is not valid.  The 
 [join() method](https://docs.python.org/3/library/stdtypes.html#str.join) can be useful here.
+
