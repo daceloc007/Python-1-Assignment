@@ -160,15 +160,22 @@ import string
 import random
 
 source1 = string.ascii_lowercase
-source2 = "!#$%&*+?@^"
+source2 = "!#$%&*+_?@^"
 ```
  
 2. Ensure that your script asks for specified length for the password
 3. Create a variable `source3` that has all the uppercase letters
 4. Transform `source1`, `source2` and `source3` into lists
-5. Use random.shuffle() with each of these lists to randomize the numbers
+5. Use [random.shuffle()](https://docs.python.org/3/library/random.html#random.shuffle) with each of these lists to 
+randomize the numbers
 6. Use the three sources to generate a password of the specified length
-7. Use a print statement to indicate whether or not your password has a letter from each source
+7. Use a print statement to indicate whether or not your password has:
+ 
+    - an uppercase letter
+    - a lowercase letter
+    - a symbol
+    - the correct length
 
-There are many ways to accomplish this. The [join() method](https://docs.python.org/3/library/stdtypes.html#str.join) 
-can be useful here.
+There are many ways to accomplish this. It is okay if you solution does not produce a valid password each time it is run, 
+but your print statements should indicate why the password is not valid.  The 
+[join() method](https://docs.python.org/3/library/stdtypes.html#str.join) can be useful here.
