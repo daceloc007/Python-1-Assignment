@@ -51,9 +51,8 @@ scripts are appended by convention with the file extension `.py`.
 As a reminder `revenue` is the amount of gross income produced through sales of products or services.  For the purposes 
 of this exercise let's use the following formula.
 
-$$
-\textrm{revenue} = \textrm{sales} * \textrm{average_price}
-$$
+<img src="https://render.githubusercontent.com/render/math?math=\textrm{revenue} = \textrm{sales} \times \textrm{average_price}">
+<p></p>
 
 In your Python script declare the following variables.  Be sure to add comments to your code to keep it as readable as 
 possible.
@@ -65,9 +64,10 @@ cogs_percentage = 0.59
 ```
 
 Let's assume these numbers represent a full year of sales.  Calculate the following terms: `annual_gross_revenue`,
-`monthly_gross_revenue`, and `quarterly_gross_revenue`.  After you have declared these variables use `print` statements to ensure 
-that the values are shown in the terminal when you execute the script. If are a more advanced student and you need more 
-of a challenge for this exercise that the print statements use the `format` method and that the values are rounded and 
+`monthly_gross_revenue`, and `quarterly_gross_revenue`.  After you have declared these variables use `print` statements 
+to ensure that the values are shown in the terminal when you execute the script. If are a more advanced student and you need more 
+of a challenge for this exercise that the print statements use the string 
+[format()](https://docs.python.org/3/library/stdtypes.html#str.format) method and that the values are rounded and 
 presented with only two significant digits. 
 
 Be sure that you can:
@@ -77,13 +77,13 @@ Be sure that you can:
 
 ### QUESTION 2
 
-Net revenue accounts for the cost of goods sold or COGS.  For our example net revenue can simply be 
+Net revenue accounts for the cost of goods sold or [COGS](https://en.wikipedia.org/wiki/Cost_of_goods_sold).  For our 
+example net revenue can simply be 
  
-$$
-\textrm{net_revenue} = {gross_revenue-cogs}
-$$
- 
-and then too calculate `cogs` you may make the assumption that it is just a percentage of gross revenue.
+<img src="https://render.githubusercontent.com/render/math?math=\textrm{net_revenue} = \textrm{gross_revenue-cogs}">
+<p></p> 
+
+and when you proceed to calculate `cogs` you may make the assumption that it is just a percentage of gross revenue.
  
 Net revenue accounts for the amounts associated with discounts, production, shipping, and much more.  Add another 
 section to your python script that summarizes the different net revenues. 
@@ -94,17 +94,22 @@ Throughout this course we will introduce you to many of the built-in functions t
 One such function [input()](https://docs.python.org/3/library/functions.html#input) allows you to gather input data 
 during code execution.  
 
-Replace the hard-coded variable for `sales` in your script with `sales = input("Enter total sales:")` and then execute
-the code again.  To ensure you script runs without errors you will also need to cast the value in sales from a string 
-into a a float.  Experiment with reasonable and unreasonable inputs to get a sense for what kind of error messages are 
-produced.  Use print statements along with the built-in function 
+In your Python script replace the hard-coded variable for `sales` in your script with `sales = input("Enter total sales:")` 
+and then execute the code again.  To ensure you script runs without errors you will also need to cast the value in sales 
+from a string into a a float.  Experiment with reasonable and unreasonable inputs to get a sense for what kind of error 
+messages are produced.  Use print statements along with the built-in function 
 [isinstance()](https://docs.python.org/3/library/functions.html#isinstance) to keep track of what happens with 
 different types of inputs (int, float, str, boolean).  
 
-If you are a more advanced student include some input sanitization in your script and provide the user with 
-meaningful error messages.
-
 > HINT: use print messages to help debug your code
+
+If you are a more advanced student you should try to include some input validation in your script and provide the user 
+with meaningful error messages.  The input coming from the command line in this case will always default to a string, 
+but you will one day write functions that take input from other sources and you will likely need to handle different 
+data types.  Think about dates for example.  To better equip yourself for handling different situations you should be 
+using Python's interactive environments like a sandbox.  If you are unsure how something might behave you should try it.
+For example, in an interactive Python environment try casting a Boolean into a float.
+
 
 ### QUESTION 4 
 
@@ -130,4 +135,40 @@ Your new script should produce the same print statements you did in the previous
 
 2. You will need to determine `sales` and `average_price` from the sales data contained in the above lists.
 
+Some of the functions that will help you here are [sum()](https://docs.python.org/3/library/functions.html#sum) and 
+[len()](https://docs.python.org/3/library/functions.html#len).
 
+If you are already comfortable with basic Python you could determine `sales` and `average_price` with either NumPy or 
+Pandas, which is how you would handle data like these in practice.
+
+### QUESTION 5
+
+We have already been introduced to many of the 
+[built-in functions](https://docs.python.org/3/library/functions.html#len) in Python.  In this exercise we will be 
+getting some practice with lists and strings.  There are many ways to manipulate strings.  We are going to use the 
+[string module](https://docs.python.org/3/library/string.html) to showcase some of Python's additional functionality for
+working with strings.  We will cover modules in another lesson, but at a high level we are exposing access to additional
+Python tools.  We will also leverage the [random module](https://docs.python.org/3/library/random.html).
+
+We are going to build a password generator.  Let's make the assumption that every password you generate needs to 
+contain at least one symbol, one uppercase letter and one lowercase letter.
+
+1. Create an new script named `generate_password.py` or something similar.  
+
+```python
+import string
+import random
+
+source1 = string.ascii_lowercase
+source2 = "!#$%&*+?@^"
+```
+ 
+2. Ensure that your script asks for specified length for the password
+3. Create a variable `source3` that has all the uppercase letters
+4. Transform `source1`, `source2` and `source3` into lists
+5. Use random.shuffle() with each of these lists to randomize the numbers
+6. Use the three sources to generate a password of the specified length
+7. Use a print statement to indicate whether or not your password has a letter from each source
+
+There are many ways to accomplish this. The [join() method](https://docs.python.org/3/library/stdtypes.html#str.join) 
+can be useful here.
