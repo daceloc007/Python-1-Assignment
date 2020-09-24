@@ -92,6 +92,8 @@ and when you proceed to calculate `cogs` you may make the assumption that it is 
 Net revenue accounts for the amounts associated with discounts, production, shipping, and much more.  Add another 
 section to your python script that summarizes the different net revenues. 
 
+## Part II - practice with data types
+
 ### QUESTION 3
 
 Throughout this course we will introduce you to many of the built-in functions that contribute to the Python ecosystem.
@@ -116,6 +118,7 @@ To better equip yourself for handling different situations you should be using P
 a sandbox.  If you are unsure how something might behave you should try it. For example, in an interactive Python 
 environment try casting a Boolean into a float.
 
+## Part III - More with data types, strings and lists
 
 ### QUESTION 4 
 
