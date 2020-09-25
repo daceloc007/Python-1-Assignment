@@ -68,11 +68,12 @@ cogs_percentage = 0.59
 ```
 
 Let's assume these numbers represent a full year of sales.  Calculate the following terms: `annual_gross_revenue`,
-`monthly_gross_revenue`, and `quarterly_gross_revenue`.  After you have declared these variables use `print` statements 
+`monthly_gross_revenue`, and `quarterly_gross_revenue`.  This is really just an estimate since you do not have all the 
+data---simple division is all you need.  After you have declared these variables use `print` statements 
 to ensure that the values are shown in the terminal when you execute the script. You should be using the string 
 [format()](https://docs.python.org/3/library/stdtypes.html#str.format) method to ensure decent looking output.  In this 
 case that means that the values are [rounded](https://docs.python.org/3/library/functions.html#round) and presented with 
-only two significant digits. 
+only two significant digits.
 
 Be sure that you can:
 
@@ -102,18 +103,16 @@ during code execution.
 
 In your Python script replace the hard-coded variable for `sales` in your script with `sales = input("Enter total sales:")` 
 and then execute the code again.  To ensure your script runs without errors you will also need to cast the value in sales 
-from a string into a a float.  Experiment with reasonable and unreasonable inputs to get a sense for what kind of error 
-messages are produced.  Use print statements along with the built-in function 
-[isinstance()](https://docs.python.org/3/library/functions.html#isinstance) to keep track of what happens with 
-different types of inputs (int, float, str, boolean).  
+from a string into a a float.  To check if it is a valid string the built-in string method `isnumeric()` can be used. 
 
 > HINT: use print messages to help debug your code
 
 If you are a more advanced student you should try to include some input validation in your script and provide the user 
 with meaningful error messages.  The input coming from the command line in this case will always default to a string, 
 but you will one day write functions that take input from other sources and so you will need to get accustomed to 
-working with and casting between different data types.  Think about dates for example.  
-
+working with and casting between different data types.  The built-in function 
+[isinstance()](https://docs.python.org/3/library/functions.html#isinstance) is particularly useful for input validation.
+  
 To better equip yourself for handling different situations you should be using Python's interactive environments like 
 a sandbox.  If you are unsure how something might behave you should try it. For example, in an interactive Python 
 environment try casting a Boolean into a float.
