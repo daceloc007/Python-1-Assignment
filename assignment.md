@@ -143,7 +143,9 @@ Your new script should produce the same print statements you did in the previous
 
 1. Change the `input` to be the `cogs_percentage`
 
-2. Determine the different revenue from the sales data contained in the above lists.
+2. Determine the two forms of revenue from the sales data contained in the above lists.
+
+> NOTE: you will not be able to simply divide annual revenue by a number to get quarterly and monthly numbers
 
 Some of the functions that will help you here are [sum()](https://docs.python.org/3/library/functions.html#sum) and 
 [len()](https://docs.python.org/3/library/functions.html#len).
