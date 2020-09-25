@@ -122,32 +122,34 @@ environment try casting a Boolean into a float.
 ### QUESTION 4 
 
 Create a new Python script.  We are going to work with `revenue` based on monthly data.  Use the following data
-for sales:
+for sales.  The length of each list is the number of sales and the price of each sale is contained by the list. 
 
 ```python
-jan_sales = [1834., 2563., 3317., 2606., 2375., 1918.,  812., 1680., 2492., 2776., 2390., 2297.]
+jan_sales = [1834., 1918.,  812., 1680., 2492., 2776., 2390., 2297.]
 feb_sales = [2148., 1745., 2190., 1863., 2589., 2345., 2724., 2239., 2785., 1483., 2038., 2021.]
-mar_sales = [1968., 1718., 1882., 1634., 2126., 1252., 2538., 2837., 1223., 2034., 1611., 2791.]
+mar_sales = [1968., 1718., 1634., 2126., 1252., 2538., 2837., 1223., 2034., 1611., 2791.]
 apr_sales = [2496., 2733.,  706., 2386., 3382., 1844., 1440., 2594., 1978., 2023., 2559., 1577.]
-may_sales = [2832., 1681., 1954., 1685., 1801., 2294., 1732., 1638., 1949., 2676., 2329., 2370.]
+may_sales = [2832., 1681., 1954., 1801., 2294., 1732., 1638., 1949., 2676., 2329., 2370.]
 jun_sales = [2335., 2538., 2186., 2186., 2622., 2564., 1269., 3124., 1286., 1689., 2627., 1345.]
-jul_sales = [2675., 1651., 1957.,  853., 2229., 2990., 3148., 2917.,  952., 1583., 2447., 2491.]
-aug_sales = [2520., 2540., 1756., 1562., 3657., 2941.,  972., 2258., 1413., 1779., 2503., 2860.]
+jul_sales = [1651., 1957.,  853., 2229., 2990., 3148., 2917.,  952., 1583., 2447., 2491.]
+aug_sales = [2520., 2540., 1756., 1562., 972., 2258., 1413., 1779., 2503., 2860.]
 sep_sales = [1827., 2003., 1349., 1858., 1370., 1076., 2897., 2238.,   91., 1951., 2509., 2933.]
-oct_sales = [2380., 2467., 1273., 3169., 1192., 2219., 2195., 3157., 2912., 2012.,  722.,  922.]
+oct_sales = [1273., 3169., 1192., 2219., 2195., 3157., 2912., 2012.,  722.,  922.]
+nov_sales = [1827., 2003., 1349., 1858., 1370., 1076., 2897., 2238.,   91., 1951., 2509., 2933.]
+dec_sales = [2200., 2460., 1260., 3157., 2912., 2012.,  722.,  922.]
 ```
 
 Your new script should produce the same print statements you did in the previous script.  The changes will be:
 
-1. Change the `input` to be the cogs_percentage
+1. Change the `input` to be the `cogs_percentage`
 
-2. You will need to determine `sales` and `average_price` from the sales data contained in the above lists.
+2. Determine the different revenue from the sales data contained in the above lists.
 
 Some of the functions that will help you here are [sum()](https://docs.python.org/3/library/functions.html#sum) and 
 [len()](https://docs.python.org/3/library/functions.html#len).
 
 If you are already comfortable with basic Python you could determine `sales` and `average_price` with either NumPy or 
-Pandas, which is how you would handle data like these in practice.
+Pandas, which is how you would handle data like these in a real-world scenario.
 
 ### QUESTION 5
 
